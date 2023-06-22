@@ -96,5 +96,5 @@ jobs:
           sed -i "s#${{ github.actor }}.*#${{ github.actor }}/reactapp-ci:${{ github.sha }}#g" deployment.yaml
           git add -A
           git commit -am "Update image for - ${{ github.sha }}"
-      - run: echo ${{ github }}
+      # - run: echo ${{ github }}
       - run: git push origin main
