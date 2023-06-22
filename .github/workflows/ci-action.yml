@@ -90,8 +90,8 @@ jobs:
           token: ${{ secrets.G_TOKEN }}
       - name: setup git config
         run: |
-          git config --global user.email "samitkoyom@gmail.com"
-          git config --global user.name "iamsamit"
+          git config --global user.email "lazypuzzle@hotmail.com"
+          git config --global user.name "lazypuzzle"
           echo ${{ github.sha }}
           sed -i "s#${{ github.actor }}.*#${{ github.actor }}/reactapp-ci:${{ github.sha }}#g" deployment.yaml
           git add -A
